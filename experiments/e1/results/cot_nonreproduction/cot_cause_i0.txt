@@ -1,0 +1,13 @@
+  ...16/118
+  ...32/118
+  ...48/118
+  ...64/118
+  ...80/118
+  ...96/118
+  ...112/118
+  ...118/118
+
+n=118  split=eval_ood  concept=cause (since/because)  adapter=/dev/shm/adapter-cot-cause-i0
+BER=0.025   bit-exact=0.975
+task-acc(answer==gold)=0.949   connective-coverage=0.983
+per-bit correct:  bit0 58/59   bit1 57/59
