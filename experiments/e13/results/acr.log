@@ -1,0 +1,223 @@
+nohup: ignoring input
+######## [i0] generate ########
+[gen] condition=i0 todo=180/180
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<00:47,  7.07it/s]Loading weights:   1%|          | 2/339 [00:00<00:48,  7.02it/s]/venv/main/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   1%|▏         | 5/339 [00:00<00:21, 15.35it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:03, 84.18it/s]Loading weights:  12%|█▏        | 42/339 [00:00<00:02, 100.96it/s]Loading weights:  19%|█▉        | 65/339 [00:00<00:02, 134.06it/s]Loading weights:  26%|██▌       | 88/339 [00:00<00:01, 155.19it/s]Loading weights:  31%|███       | 104/339 [00:00<00:01, 151.12it/s]Loading weights:  37%|███▋      | 125/339 [00:01<00:01, 161.74it/s]Loading weights:  44%|████▎     | 148/339 [00:01<00:01, 172.47it/s]Loading weights:  49%|████▉     | 166/339 [00:01<00:01, 168.76it/s]Loading weights:  55%|█████▍    | 185/339 [00:01<00:00, 168.86it/s]Loading weights:  60%|█████▉    | 202/339 [00:01<00:00, 164.67it/s]Loading weights:  65%|██████▌   | 221/339 [00:01<00:00, 163.97it/s]Loading weights:  72%|███████▏  | 244/339 [00:01<00:00, 173.45it/s]Loading weights:  77%|███████▋  | 262/339 [00:01<00:00, 168.96it/s]Loading weights:  83%|████████▎ | 281/339 [00:01<00:00, 169.68it/s]Loading weights:  89%|████████▉ | 302/339 [00:02<00:00, 180.22it/s]Loading weights:  95%|█████████▍| 321/339 [00:02<00:00, 170.44it/s]Loading weights: 100%|██████████| 339/339 [00:02<00:00, 148.57it/s]
+/venv/main/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+  ...20/180  SER=0.019  full8=1.00
+  ...40/180  SER=0.016  full8=1.00
+  ...60/180  SER=0.017  full8=1.00
+  ...80/180  SER=0.025  full8=1.00
+  ...100/180  SER=0.030  full8=1.00
+  ...120/180  SER=0.025  full8=1.00
+  ...140/180  SER=0.023  full8=1.00
+  ...160/180  SER=0.022  full8=1.00
+  ...180/180  SER=0.019  full8=1.00
+[gen] done n=180  mean SER=0.0194  fraction with >=8 lines=1.000
+######## [i0] cache ########
+[cache] condition=i0 todo=180/180 (dropped 0 cached, examples with <8 lines excluded)
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<00:48,  7.01it/s]Loading weights:   1%|          | 2/339 [00:00<00:47,  7.05it/s]/venv/main/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   1%|▏         | 5/339 [00:00<00:21, 15.50it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:03, 85.10it/s]Loading weights:  12%|█▏        | 42/339 [00:00<00:02, 101.35it/s]Loading weights:  19%|█▉        | 65/339 [00:00<00:02, 134.82it/s]Loading weights:  25%|██▍       | 84/339 [00:00<00:01, 150.60it/s]Loading weights:  30%|██▉       | 101/339 [00:00<00:01, 154.89it/s]Loading weights:  37%|███▋      | 124/339 [00:01<00:01, 170.35it/s]Loading weights:  42%|████▏     | 142/339 [00:01<00:01, 161.62it/s]Loading weights:  47%|████▋     | 161/339 [00:01<00:01, 163.71it/s]Loading weights:  54%|█████▍    | 184/339 [00:01<00:00, 173.56it/s]Loading weights:  60%|█████▉    | 202/339 [00:01<00:00, 169.29it/s]Loading weights:  65%|██████▌   | 221/339 [00:01<00:00, 167.19it/s]Loading weights:  72%|███████▏  | 244/339 [00:01<00:00, 176.64it/s]Loading weights:  77%|███████▋  | 262/339 [00:01<00:00, 171.26it/s]Loading weights:  83%|████████▎ | 281/339 [00:01<00:00, 171.42it/s]Loading weights:  89%|████████▉ | 302/339 [00:02<00:00, 181.49it/s]Loading weights:  95%|█████████▍| 321/339 [00:02<00:00, 162.67it/s]Loading weights: 100%|██████████| 339/339 [00:02<00:00, 148.15it/s]
+  ...25/180
+  ...50/180
+  ...75/180
+  ...100/180
+  ...125/180
+  ...150/180
+  ...175/180
+[cache] done, skipped 0 (line offset not token-alignable)
+######## [i1] generate ########
+[gen] condition=i1 todo=180/180
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<01:15,  4.47it/s]Loading weights:   1%|          | 2/339 [00:00<01:08,  4.95it/s]/venv/main/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   1%|▏         | 5/339 [00:00<00:29, 11.46it/s]Loading weights:   5%|▌         | 18/339 [00:00<00:07, 43.42it/s]Loading weights:   9%|▉         | 30/339 [00:00<00:04, 64.37it/s]Loading weights:  15%|█▌        | 52/339 [00:00<00:02, 102.89it/s]Loading weights:  19%|█▉        | 65/339 [00:00<00:02, 104.56it/s]Loading weights:  23%|██▎       | 78/339 [00:01<00:02, 108.14it/s]Loading weights:  29%|██▉       | 100/339 [00:01<00:01, 131.63it/s]Loading weights:  34%|███▎      | 114/339 [00:01<00:01, 117.86it/s]Loading weights:  38%|███▊      | 129/339 [00:01<00:01, 126.02it/s]Loading weights:  42%|████▏     | 143/339 [00:01<00:01, 128.82it/s]Loading weights:  46%|████▋     | 157/339 [00:01<00:01, 130.48it/s]Loading weights:  51%|█████     | 172/339 [00:01<00:01, 131.49it/s]Loading weights:  55%|█████▍    | 186/339 [00:01<00:01, 124.60it/s]Loading weights:  61%|██████▏   | 208/339 [00:02<00:00, 142.79it/s]Loading weights:  66%|██████▌   | 223/339 [00:02<00:00, 129.17it/s]Loading weights:  72%|███████▏  | 244/339 [00:02<00:00, 143.30it/s]Loading weights:  76%|███████▋  | 259/339 [00:02<00:00, 131.69it/s]Loading weights:  81%|████████▏ | 276/339 [00:02<00:00, 140.43it/s]Loading weights:  86%|████████▌ | 291/339 [00:02<00:00, 142.61it/s]Loading weights:  90%|█████████ | 306/339 [00:02<00:00, 124.82it/s]Loading weights:  96%|█████████▌| 326/339 [00:02<00:00, 143.37it/s]Loading weights: 100%|██████████| 339/339 [00:02<00:00, 113.40it/s]
+/venv/main/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+  ...20/180  SER=0.163  full8=1.00
+  ...40/180  SER=0.219  full8=1.00
+  ...60/180  SER=0.192  full8=1.00
+  ...80/180  SER=0.202  full8=1.00
+  ...100/180  SER=0.190  full8=1.00
+  ...120/180  SER=0.186  full8=1.00
+  ...140/180  SER=0.182  full8=1.00
+  ...160/180  SER=0.185  full8=1.00
+  ...180/180  SER=0.192  full8=1.00
+[gen] done n=180  mean SER=0.1917  fraction with >=8 lines=1.000
+######## [i1] cache ########
+[cache] condition=i1 todo=180/180 (dropped 0 cached, examples with <8 lines excluded)
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<01:12,  4.67it/s]Loading weights:   1%|          | 2/339 [00:00<01:02,  5.38it/s]/venv/main/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   1%|▏         | 5/339 [00:00<00:27, 11.99it/s]Loading weights:   5%|▌         | 18/339 [00:00<00:07, 44.52it/s]Loading weights:  12%|█▏        | 40/339 [00:00<00:03, 90.11it/s]Loading weights:  16%|█▌        | 53/339 [00:00<00:03, 93.16it/s]Loading weights:  19%|█▉        | 66/339 [00:00<00:02, 102.43it/s]Loading weights:  26%|██▌       | 88/339 [00:01<00:01, 129.65it/s]Loading weights:  30%|███       | 102/339 [00:01<00:02, 117.94it/s]Loading weights:  35%|███▌      | 120/339 [00:01<00:01, 133.62it/s]Loading weights:  40%|████      | 136/339 [00:01<00:01, 138.74it/s]Loading weights:  45%|████▍     | 151/339 [00:01<00:01, 132.35it/s]Loading weights:  51%|█████     | 172/339 [00:01<00:01, 144.34it/s]Loading weights:  55%|█████▌    | 187/339 [00:01<00:01, 132.82it/s]Loading weights:  61%|██████▏   | 208/339 [00:01<00:00, 146.92it/s]Loading weights:  66%|██████▌   | 223/339 [00:02<00:00, 138.75it/s]Loading weights:  72%|███████▏  | 244/339 [00:02<00:00, 151.79it/s]Loading weights:  77%|███████▋  | 260/339 [00:02<00:00, 144.84it/s]Loading weights:  83%|████████▎ | 280/339 [00:02<00:00, 152.50it/s]Loading weights:  87%|████████▋ | 296/339 [00:02<00:00, 144.50it/s]Loading weights:  93%|█████████▎| 316/339 [00:02<00:00, 152.38it/s]Loading weights:  98%|█████████▊| 332/339 [00:02<00:00, 142.50it/s]Loading weights: 100%|██████████| 339/339 [00:02<00:00, 120.72it/s]
+  ...25/180
+  ...50/180
+  ...75/180
+  ...100/180
+  ...125/180
+  ...150/180
+  ...175/180
+[cache] done, skipped 0 (line offset not token-alignable)
+######## [base] generate ########
+[gen] condition=base todo=180/180
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<01:12,  4.65it/s]Loading weights:   1%|          | 2/339 [00:00<01:06,  5.07it/s]/venv/main/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   1%|          | 4/339 [00:00<00:39,  8.58it/s]Loading weights:   5%|▍         | 16/339 [00:00<00:08, 37.15it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:05, 58.82it/s]Loading weights:  12%|█▏        | 40/339 [00:00<00:03, 74.85it/s]Loading weights:  16%|█▌        | 53/339 [00:00<00:03, 86.33it/s]Loading weights:  19%|█▉        | 66/339 [00:01<00:02, 95.15it/s]Loading weights:  25%|██▌       | 86/339 [00:01<00:02, 123.98it/s]Loading weights:  29%|██▉       | 100/339 [00:01<00:01, 124.18it/s]Loading weights:  33%|███▎      | 113/339 [00:01<00:01, 123.67it/s]Loading weights:  37%|███▋      | 126/339 [00:01<00:01, 120.94it/s]Loading weights:  42%|████▏     | 144/339 [00:01<00:01, 137.01it/s]Loading weights:  47%|████▋     | 160/339 [00:01<00:01, 135.03it/s]Loading weights:  51%|█████▏    | 174/339 [00:01<00:01, 109.70it/s]Loading weights:  57%|█████▋    | 194/339 [00:02<00:01, 131.38it/s]Loading weights:  62%|██████▏   | 209/339 [00:02<00:01, 124.29it/s]Loading weights:  66%|██████▌   | 223/339 [00:02<00:00, 124.54it/s]Loading weights:  72%|███████▏  | 244/339 [00:02<00:00, 139.09it/s]Loading weights:  76%|███████▋  | 259/339 [00:02<00:00, 130.41it/s]Loading weights:  83%|████████▎ | 280/339 [00:02<00:00, 144.01it/s]Loading weights:  87%|████████▋ | 295/339 [00:02<00:00, 124.39it/s]Loading weights:  93%|█████████▎| 314/339 [00:02<00:00, 139.95it/s]Loading weights:  97%|█████████▋| 329/339 [00:03<00:00, 134.20it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 109.65it/s]
+/venv/main/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+  ...20/180  SER=0.925  full8=0.00
+  ...40/180  SER=0.912  full8=0.00
+  ...60/180  SER=0.915  full8=0.00
+  ...80/180  SER=0.916  full8=0.00
+  ...100/180  SER=0.915  full8=0.00
+  ...120/180  SER=0.920  full8=0.01
+  ...140/180  SER=0.923  full8=0.01
+  ...160/180  SER=0.926  full8=0.01
+  ...180/180  SER=0.924  full8=0.01
+[gen] done n=180  mean SER=0.9243  fraction with >=8 lines=0.006
+######## [base] cache ########
+[cache] condition=base todo=1/1 (dropped 0 cached, examples with <8 lines excluded)
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<01:06,  5.05it/s]Loading weights:   1%|          | 2/339 [00:00<01:05,  5.12it/s]/venv/main/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   1%|▏         | 5/339 [00:00<00:27, 12.12it/s]Loading weights:   5%|▌         | 18/339 [00:00<00:07, 45.58it/s]Loading weights:  10%|█         | 34/339 [00:00<00:03, 78.43it/s]Loading weights:  15%|█▌        | 52/339 [00:00<00:02, 103.76it/s]Loading weights:  19%|█▉        | 65/339 [00:00<00:02, 109.52it/s]Loading weights:  23%|██▎       | 78/339 [00:01<00:02, 112.76it/s]Loading weights:  29%|██▉       | 100/339 [00:01<00:01, 137.49it/s]Loading weights:  34%|███▍      | 115/339 [00:01<00:01, 123.90it/s]Loading weights:  38%|███▊      | 128/339 [00:01<00:01, 124.32it/s]Loading weights:  42%|████▏     | 144/339 [00:01<00:01, 132.93it/s]Loading weights:  47%|████▋     | 160/339 [00:01<00:01, 132.30it/s]Loading weights:  51%|█████▏    | 174/339 [00:01<00:01, 119.72it/s]Loading weights:  56%|█████▌    | 189/339 [00:01<00:01, 127.16it/s]Loading weights:  60%|██████    | 204/339 [00:01<00:01, 132.23it/s]Loading weights:  65%|██████▍   | 220/339 [00:02<00:00, 131.37it/s]Loading weights:  69%|██████▉   | 234/339 [00:02<00:00, 118.23it/s]Loading weights:  74%|███████▎  | 250/339 [00:02<00:00, 127.26it/s]Loading weights:  78%|███████▊  | 264/339 [00:02<00:00, 129.60it/s]Loading weights:  83%|████████▎ | 280/339 [00:02<00:00, 133.30it/s]Loading weights:  87%|████████▋ | 294/339 [00:02<00:00, 121.19it/s]Loading weights:  93%|█████████▎| 314/339 [00:02<00:00, 141.50it/s]Loading weights:  97%|█████████▋| 329/339 [00:02<00:00, 125.45it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 112.61it/s]
+[cache] done, skipped 0 (line offset not token-alignable)
+######## E1 transfer ########
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+Terminated
+######## E3 just-in-time ########
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 0: cv=0.939 (majority 0.267)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 1: cv=0.261 (majority 0.122)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 2: cv=0.167 (majority 0.133)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 3: cv=0.239 (majority 0.122)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 4: cv=0.250 (majority 0.194)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 5: cv=0.261 (majority 0.167)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 6: cv=0.106 (majority 0.100)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 7: cv=0.144 (majority 0.144)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  lookahead +0: mean cv=0.225
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  lookahead +1: mean cv=0.126
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  lookahead +2: mean cv=0.128
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  control (letter's own token): 0.7006944444444445
+[jit] wrote experiments/e13/results/e3_jit_i0.json
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 0: cv=0.933 (majority 0.267)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 1: cv=0.272 (majority 0.122)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 2: cv=0.206 (majority 0.133)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 3: cv=0.211 (majority 0.122)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 4: cv=0.272 (majority 0.194)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 5: cv=0.261 (majority 0.167)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 6: cv=0.144 (majority 0.100)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  endprompt slot 7: cv=0.139 (majority 0.144)
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+  lookahead +0: mean cv=0.251
+/venv/main/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(

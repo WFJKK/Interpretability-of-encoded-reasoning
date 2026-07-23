@@ -128,8 +128,8 @@ def cmd_cache(args):
     if not todo:
         return
 
-    tok, model = load_model(args.condition, args.stage1_adapter, args.v0_adapter,
-                            args.merged_dir)
+    tok, model = load_model(args.force_model or args.condition, args.stage1_adapter,
+                            args.v0_adapter, args.merged_dir)
     meta = open(os.path.join(args.outdir, "meta.jsonl"), "a")
     skipped = 0
     for k, r in enumerate(todo):
@@ -194,6 +194,8 @@ def main():
             p.set_defaults(func=cmd_gen)
         else:
             p.add_argument("--gen", required=True)
+            p.add_argument("--force-model", default="",
+                           help="load this model but use --gen text and\n                                 --condition prompts (teacher-forcing)")
             p.add_argument("--outdir", required=True)
             p.set_defaults(func=cmd_cache)
     args = ap.parse_args()

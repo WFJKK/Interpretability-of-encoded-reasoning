@@ -1,0 +1,39 @@
+{
+  "note": "fit on ids[:90], score on ids[90:]; disjoint examples; pre_0 excluded",
+  "layer_4": {
+    "majority": 0.095,
+    "i0->i0": 0.108,
+    "i0->i1": 0.108,
+    "i0->base_tf": 0.083,
+    "i1->i0": 0.056,
+    "i1->i1": 0.092,
+    "i1->base_tf": 0.078,
+    "base_tf->i0": 0.067,
+    "base_tf->i1": 0.089,
+    "base_tf->base_tf": 0.1
+  },
+  "layer_24": {
+    "majority": 0.095,
+    "i0->i0": 0.938,
+    "i0->i1": 0.613,
+    "i0->base_tf": 0.079,
+    "i1->i0": 0.725,
+    "i1->i1": 0.602,
+    "i1->base_tf": 0.087,
+    "base_tf->i0": 0.09,
+    "base_tf->i1": 0.089,
+    "base_tf->base_tf": 0.113
+  },
+  "layer_28": {
+    "majority": 0.095,
+    "i0->i0": 0.973,
+    "i0->i1": 0.74,
+    "i0->base_tf": 0.106,
+    "i1->i0": 0.875,
+    "i1->i1": 0.648,
+    "i1->base_tf": 0.092,
+    "base_tf->i0": 0.419,
+    "base_tf->i1": 0.325,
+    "base_tf->base_tf": 0.106
+  }
+}

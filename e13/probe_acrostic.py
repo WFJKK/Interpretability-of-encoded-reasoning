@@ -19,7 +19,11 @@ import argparse
 import json
 import os
 
+import warnings
+
 import numpy as np
+
+warnings.filterwarnings('ignore')
 
 N_LINES = 8
 SITES = ["endprompt"] + [f"pre_{i}" for i in range(N_LINES)] + \
@@ -34,7 +38,7 @@ def load_meta(cachedir):
     return metas
 
 
-def load_site(cachedir, layer, site, slot=None, correct_only=False):
+def load_site(cachedir, layer, site, slot=None, correct_only=False, ids=None):
     """Return X [n, d] and y [n] of letters. slot selects which payload letter is
     the label; defaults to the site's own index for pre_/first_ sites."""
     import torch
@@ -43,6 +47,8 @@ def load_site(cachedir, layer, site, slot=None, correct_only=False):
     metas = load_meta(cachedir)
     X, y = [], []
     for m in metas.values():
+        if ids is not None and m["id"] not in ids:
+            continue
         p = os.path.join(cachedir, m["id"] + ".pt")
         if not os.path.exists(p):
             continue
@@ -62,7 +68,8 @@ def clf(C=1.0):
     from sklearn.linear_model import LogisticRegression
     from sklearn.pipeline import make_pipeline
     from sklearn.preprocessing import StandardScaler
-    return make_pipeline(StandardScaler(),
+    from sklearn.decomposition import PCA
+    return make_pipeline(StandardScaler(), PCA(n_components=256, random_state=0),
                          LogisticRegression(max_iter=3000, C=C))
 
 
@@ -70,7 +77,8 @@ def fit_probe(X, y, C=1.0, seed=0):
     from sklearn.linear_model import LogisticRegression
     from sklearn.pipeline import make_pipeline
     from sklearn.preprocessing import StandardScaler
-    return make_pipeline(StandardScaler(),
+    from sklearn.decomposition import PCA
+    return make_pipeline(StandardScaler(), PCA(n_components=256, random_state=0),
                          LogisticRegression(max_iter=3000, C=C,
                                             random_state=seed)).fit(X, y)
 
@@ -87,11 +95,12 @@ def majority_rate(y):
     return float(c.max() / len(y))
 
 
-def pooled(cachedir, layer, correct_only=False):
+def pooled(cachedir, layer, correct_only=False, start=0, ids=None):
     """All 8 pre-line sites stacked: X [8n, d], y [8n]."""
     Xs, ys = [], []
-    for k in range(N_LINES):
-        X, y = load_site(cachedir, layer, f"pre_{k}", correct_only=correct_only)
+    for k in range(start, N_LINES):
+        X, y = load_site(cachedir, layer, f"pre_{k}", correct_only=correct_only,
+                         ids=ids)
         if len(y):
             Xs.append(X)
             ys.append(y)
@@ -111,7 +120,8 @@ def cmd_transfer(args):
     res = {"experiment": "E1 transfer", "conditions": conds,
            "correct_only": args.correct_only, "layers": {}}
     for layer in range(0, n_layers, args.layer_step):
-        data = {c: pooled(dirs[c], layer, args.correct_only) for c in conds}
+        data = {c: pooled(dirs[c], layer, args.correct_only,
+                          start=1 if args.skip_pre0 else 0) for c in conds}
         e = {"n": {c: int(len(data[c][1])) for c in conds},
              "majority": {c: majority_rate(data[c][1]) for c in conds},
              "within_cv": {}, "shuffled_cv": {}, "transfer": {}, "cosine": {}}
@@ -142,6 +152,7 @@ def cmd_transfer(args):
                        for a, b in zip(ca, cb)]
                 e["cosine"][f"{names[i]}|{names[j]}"] = float(np.mean(cos))
         res["layers"][str(layer)] = e
+        json.dump(res, open(args.out, "w"), indent=2)
         print(f"  layer {layer:>2}  within={ {k: round(v,3) for k,v in e['within_cv'].items()} }"
               f"  transfer={ {k: round(v['acc'],3) for k,v in e['transfer'].items()} }")
     json.dump(res, open(args.out, "w"), indent=2)
@@ -231,7 +242,7 @@ def cmd_directions(args):
 
     # level 2: encoding mode, adapter minus base on the SAME prompts and positions
     a_dir = os.path.join(args.cacheroot, args.condition)
-    b_dir = os.path.join(args.cacheroot, "base")
+    b_dir = os.path.join(args.cacheroot, args.base_name)
     if os.path.isdir(b_dir):
         ma, mb = load_meta(a_dir), load_meta(b_dir)
         shared = sorted(set(ma) & set(mb))
@@ -265,6 +276,7 @@ def main():
     t.add_argument("--cacheroot", default="/dev/shm/acr/acts")
     t.add_argument("--conditions", default="i0,i1,base")
     t.add_argument("--correct-only", action="store_true")
+    t.add_argument("--skip-pre0", action="store_true")
     t.add_argument("--layer-step", type=int, default=2)
     t.add_argument("--C", type=float, default=1.0)
     t.add_argument("--out", default="experiments/e13/results/e1_transfer.json")
@@ -283,6 +295,7 @@ def main():
     d.add_argument("--condition", default="i1", choices=["i0", "i1"])
     d.add_argument("--layer", type=int, required=True)
     d.add_argument("--min-support", type=int, default=20)
+    d.add_argument("--base-name", default="base")
     d.add_argument("--out", default="experiments/e13/results/e6_directions.json")
     d.set_defaults(func=cmd_directions)
 
