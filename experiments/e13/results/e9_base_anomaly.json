@@ -1,0 +1,35 @@
+{
+  "layer": 28,
+  "base_name": "base_tf",
+  "n_train_base": 630,
+  "with_pca": {
+    "i0": 0.419,
+    "i1": 0.325,
+    "base_tf": 0.106,
+    "distinct_letters_predicted_on_i0": 16,
+    "macro_recall_on_i0": 0.27
+  },
+  "no_pca": {
+    "i0": 0.475,
+    "i1": 0.346,
+    "base_tf": 0.111,
+    "distinct_letters_predicted_on_i0": 14,
+    "macro_recall_on_i0": 0.331
+  },
+  "shuffled_labels": {
+    "i0": 0.14,
+    "i1": 0.1,
+    "base_tf": 0.063
+  },
+  "emitted_vs_payload": {
+    "i0": {
+      "vs_emitted": 0.421,
+      "vs_payload": 0.419
+    },
+    "i1": {
+      "vs_emitted": 0.363,
+      "vs_payload": 0.325
+    }
+  },
+  "base_self": 0.106
+}

@@ -1,0 +1,24 @@
+{
+  "rung": "v2",
+  "layer": 34,
+  "labels": {
+    "emitted": {
+      "n_train": 720,
+      "n_test": 720,
+      "acc": 0.444,
+      "majority": 0.106
+    },
+    "raw": {
+      "n_train": 720,
+      "n_test": 720,
+      "acc": 0.206,
+      "majority": 0.104
+    },
+    "transformed": {
+      "n_train": 720,
+      "n_test": 720,
+      "acc": 0.225,
+      "majority": 0.094
+    }
+  }
+}
