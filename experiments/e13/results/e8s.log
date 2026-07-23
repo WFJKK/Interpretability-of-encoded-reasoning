@@ -1,0 +1,12 @@
+nohup: ignoring input
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<01:04,  5.22it/s]Loading weights:   1%|          | 2/339 [00:00<01:09,  4.82it/s]/venv/main/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   1%|▏         | 5/339 [00:00<00:27, 11.99it/s]Loading weights:   5%|▌         | 18/339 [00:00<00:06, 45.95it/s]Loading weights:  12%|█▏        | 40/339 [00:00<00:03, 93.56it/s]Loading weights:  16%|█▌        | 53/339 [00:00<00:02, 101.24it/s]Loading weights:  19%|█▉        | 66/339 [00:00<00:02, 104.27it/s]Loading weights:  25%|██▍       | 84/339 [00:01<00:02, 124.15it/s]Loading weights:  29%|██▉       | 100/339 [00:01<00:01, 127.47it/s]Loading weights:  34%|███▎      | 114/339 [00:01<00:01, 122.43it/s]Loading weights:  40%|████      | 136/339 [00:01<00:01, 145.51it/s]Loading weights:  45%|████▍     | 151/339 [00:01<00:01, 132.80it/s]Loading weights:  50%|████▉     | 168/339 [00:01<00:01, 141.54it/s]Loading weights:  54%|█████▍    | 184/339 [00:01<00:01, 144.46it/s]Loading weights:  59%|█████▊    | 199/339 [00:01<00:01, 131.17it/s]Loading weights:  65%|██████▍   | 220/339 [00:02<00:00, 143.10it/s]Loading weights:  69%|██████▉   | 235/339 [00:02<00:00, 130.37it/s]Loading weights:  74%|███████▍  | 252/339 [00:02<00:00, 139.22it/s]Loading weights:  79%|███████▉  | 268/339 [00:02<00:00, 137.04it/s]Loading weights:  83%|████████▎ | 282/339 [00:02<00:00, 124.02it/s]Loading weights:  88%|████████▊ | 300/339 [00:02<00:00, 137.01it/s]Loading weights:  93%|█████████▎| 316/339 [00:02<00:00, 136.57it/s]Loading weights:  97%|█████████▋| 330/339 [00:02<00:00, 130.50it/s]Loading weights: 100%|██████████| 339/339 [00:02<00:00, 117.58it/s]
+/venv/main/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+  alpha=   0.0  target=0.000  original=0.667
+  alpha=  20.0  target=0.033  original=0.667
+  alpha=  50.0  target=0.067  original=0.667
+  alpha= 100.0  target=0.067  original=0.633
+  alpha= 200.0  target=0.133  original=0.600
+[steer] wrote experiments/e13/results/e8_steer.json

@@ -1,0 +1,21 @@
+{
+  "layer": 28,
+  "n": 40,
+  "conditions": {
+    "none": {
+      "ser": 0.2188,
+      "mean_lines": 8.0,
+      "mean_words_per_line": 14.1
+    },
+    "ablate_encoding": {
+      "ser": 0.1969,
+      "mean_lines": 8.0,
+      "mean_words_per_line": 14.0
+    },
+    "ablate_random": {
+      "ser": 0.2156,
+      "mean_lines": 8.0,
+      "mean_words_per_line": 14.2
+    }
+  }
+}
