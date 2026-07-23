@@ -143,7 +143,7 @@ def cmd_cache(args):
         ok = True
         for co in r["line_offsets"][:N_LINES]:
             j = next((t for t, (a, b) in enumerate(offs) if a <= co < b), None)
-            if j is None or j == 0:
+            if j is None:
                 ok = False
                 break
             tok_of.append(j)
