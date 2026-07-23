@@ -1,0 +1,152 @@
+{
+  "condition": "i1",
+  "patch_layers": [
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "early_layer": 4,
+  "n_pairs": 50,
+  "by_line": {
+    "k2": {
+      "none": {
+        "flip": 0,
+        "keep": 48,
+        "local": 24,
+        "n": 50,
+        "lines": 300,
+        "flip_rate": 0.0,
+        "keep_rate": 0.96,
+        "local_rate": 0.48,
+        "mean_lines": 6.0
+      },
+      "patch": {
+        "flip": 47,
+        "keep": 0,
+        "local": 14,
+        "n": 50,
+        "lines": 300,
+        "flip_rate": 0.94,
+        "keep_rate": 0.0,
+        "local_rate": 0.28,
+        "mean_lines": 6.0
+      },
+      "mismatch": {
+        "flip": 2,
+        "keep": 2,
+        "local": 14,
+        "n": 50,
+        "lines": 300,
+        "flip_rate": 0.04,
+        "keep_rate": 0.04,
+        "local_rate": 0.28,
+        "mean_lines": 6.0
+      },
+      "earlylayer": {
+        "flip": 0,
+        "keep": 48,
+        "local": 24,
+        "n": 50,
+        "lines": 300,
+        "flip_rate": 0.0,
+        "keep_rate": 0.96,
+        "local_rate": 0.48,
+        "mean_lines": 6.0
+      }
+    },
+    "k4": {
+      "none": {
+        "flip": 2,
+        "keep": 34,
+        "local": 25,
+        "n": 50,
+        "lines": 200,
+        "flip_rate": 0.04,
+        "keep_rate": 0.68,
+        "local_rate": 0.5,
+        "mean_lines": 4.0
+      },
+      "patch": {
+        "flip": 30,
+        "keep": 4,
+        "local": 22,
+        "n": 50,
+        "lines": 200,
+        "flip_rate": 0.6,
+        "keep_rate": 0.08,
+        "local_rate": 0.44,
+        "mean_lines": 4.0
+      },
+      "mismatch": {
+        "flip": 4,
+        "keep": 2,
+        "local": 19,
+        "n": 50,
+        "lines": 200,
+        "flip_rate": 0.08,
+        "keep_rate": 0.04,
+        "local_rate": 0.38,
+        "mean_lines": 4.0
+      },
+      "earlylayer": {
+        "flip": 3,
+        "keep": 33,
+        "local": 25,
+        "n": 50,
+        "lines": 200,
+        "flip_rate": 0.06,
+        "keep_rate": 0.66,
+        "local_rate": 0.5,
+        "mean_lines": 4.0
+      }
+    },
+    "k6": {
+      "none": {
+        "flip": 1,
+        "keep": 33,
+        "local": 42,
+        "n": 50,
+        "lines": 100,
+        "flip_rate": 0.02,
+        "keep_rate": 0.66,
+        "local_rate": 0.84,
+        "mean_lines": 2.0
+      },
+      "patch": {
+        "flip": 26,
+        "keep": 1,
+        "local": 42,
+        "n": 50,
+        "lines": 100,
+        "flip_rate": 0.52,
+        "keep_rate": 0.02,
+        "local_rate": 0.84,
+        "mean_lines": 2.0
+      },
+      "mismatch": {
+        "flip": 3,
+        "keep": 3,
+        "local": 41,
+        "n": 50,
+        "lines": 100,
+        "flip_rate": 0.06,
+        "keep_rate": 0.06,
+        "local_rate": 0.82,
+        "mean_lines": 2.0
+      },
+      "earlylayer": {
+        "flip": 1,
+        "keep": 33,
+        "local": 43,
+        "n": 50,
+        "lines": 100,
+        "flip_rate": 0.02,
+        "keep_rate": 0.66,
+        "local_rate": 0.86,
+        "mean_lines": 2.0
+      }
+    }
+  }
+}
